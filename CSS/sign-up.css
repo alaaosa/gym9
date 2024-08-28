@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.sign{
+    position: relative;
+    color: rgb(6, 130, 246);
+}
+.background{
+    background-image: url(../images/wp9397074.webp);
+    background-size: cover;
+    background-position:center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.form{
+    border: 1px solid white;
+    background-color: rgb(67, 66, 66);
+    position: absolute;
+    top: 17%;
+    left: 35%;
+    z-index: 2;
+    width: 20%;
+    height: 55vh;
+    border-radius: 10% ;
+}
+
+
+.sign h2{
+    font-size: 1.9em;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7em;
+}
+
+.sign h3{
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sign input {
+    display: block;
+    margin: .5% 25% ;
+    padding-left:.5em;
+}
+
+.sign label{
+    display: flex;
+    justify-content: center;
+
+}
+
+.sign-up{
+    margin-top: 2em;
+}
+
+.sign-up a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(128, 119, 119);
+    display: flex;
+    justify-content: center;
+    padding: .5em 1em;
+    width: 8em;
+    align-items: center;
+    margin: 1em 6em;
+    border-radius: 5px;
+}
+
+.sign-up a:hover{
+    background-color: rgb(186, 46, 90);
+}
+
+/* .container h2{
+    top: -5em;
+    width: 100%;
+    position: absolute;
+    left: 2em;
+}
+
+.container h3{
+        font-size: 0.7em;
+            font-weight: bold;
+            position: absolute;
+            top: -7em;
+} */

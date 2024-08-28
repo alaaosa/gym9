@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+}
+
+.navbar {
+    position: relative;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(22, 100%, 50%);
+    border-radius: 10%;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 80%;
+    right: 9rem;
+    box-shadow: 1px 1px 25px rgba(246, 245, 243, 1);
+}
+
+.user-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(22, 100%, 50%);
+    color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 6rem;
+    box-shadow: -1px -1px 10px rgb(225, 223, 219, 1);
+    height: 2rem;
+    width: 2rem;
+}
+
+.nav-links {
+    margin: 2.2rem -4rem;
+    background-color: hsl(22, 100%, 50%);
+    position: absolute;
+    right: 13rem;
+    width: 6rem;
+    height: auto;
+    max-height: 15rem;
+    display: none;
+    /* Hide by default */
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.user-menu.active {
+    display: flex;
+}
+
+.user-menu {
+    margin: 2.2rem -4rem;
+    background-color: hsl(22, 100%, 50%);
+    position: absolute;
+    right: 6rem;
+    width: 6rem;
+    height: auto;
+    max-height: 15rem;
+    display: none;
+    /* Hide by default */
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.nav-links ul li,
+.user-menu ul li {
+    list-style: none;
+    width: 100%;
+    height: 2rem;
+}
+
+.nav-links ul li a,
+.user-menu ul li a {
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover,
+.user-menu ul li a:hover {
+    background-color: rgb(123, 121, 121);
+}
+
+.header-content img {
+    width: 4.5rem;
+    height: 3.5rem;
+    margin-left: 3rem;
+}
+
+section .contain {
+    background-image: url(../images/main.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.contain .desc {
+    color: rgb(240, 129, 44);
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 4px rgb(248, 238, 232);
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.contain .name {
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 6px 10px 2px rgb(236, 94, 5);
+    font-size: 1em;
+    /* Start small */
+    font-weight: bold;
+    color: white;
+    animation: growText 3s ease-out forwards;
+}
+
+@keyframes growText {
+    0% {
+        transform: scale(0.1);
+        font-size: 0.1em;
+        /* الحجم الابتدائي للنص */
+    }
+
+    100% {
+        transform: scale(1);
+        font-size: 5em;
+        /* الحجم النهائي للنص */
+    }
+}
+
+/* استعلام الوسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .contain .desc {
+        left: 10%;
+        /* Adjust position */
+        top: 30%;
+        /* Adjust position */
+        font-size: 1.5rem;
+        /* Smaller font size */
+    }
+
+    .contain .name {
+        left: 10%;
+        /* Adjust position */
+        font-size: 3em;
+        /* Smaller font size */
+    }
+
+    .menu-icon,
+    .user-icon {
+        top: 10%;
+        right: 1rem;
+        /* Adjust position for small screens */
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .nav-links,
+    .user-menu {
+        right: 2rem;
+        /* Adjust position for small screens */
+        width: 4rem;
+        /* Smaller width for small screens */
+    }
+}

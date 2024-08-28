@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.sign {
+    position: relative;
+}
+
+.background {
+    background-image: url(../images/wp9397074.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    border: 1px solid white;
+    background-color: rgb(67, 66, 66);
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    border-radius: 10%;
+    height: 55vh;
+    max-height: 55vh;
+    width: 20%;
+    min-width: 280px;
+    /* الحد الأدنى للعرض لضمان التصميم الجيد على الهواتف الصغيرة */
+    padding: 20px;
+    /* إضافة مسافة داخلية */
+}
+
+.sign h2 {
+    font-size: 1.9em;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7em;
+}
+
+.sign h3 {
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in {
+    position: relative;
+    margin-top: 2em;
+}
+
+.sign-in input {
+    display: block;
+    /* تغيير flex إلى block لتحسين المحاذاة */
+    margin: 3% auto;
+    padding-left: 0.5em;
+    width: 80%;
+    /* تعديل العرض ليكون أكثر توافقية */
+}
+
+.sign-in label {
+    display: flex;
+    justify-content: center;
+}
+
+
+.sign-in .checklabel {
+    position: absolute;
+    /* margin-top: .7em; */
+    left: 2em;
+    font-size: 0.8em;
+}
+
+.sign-in .check {
+    position: absolute;
+    margin-top: .2rem;
+    left: 10%;
+}
+
+.form .sign-in a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(128, 119, 119);
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 1em;
+    width: 8em;
+    align-items: center;
+    margin: 35% auto;
+    /* تعديل الهامش لتوسيط الزر */
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    /* لتوسيط الزر */
+    transform: translateX(-50%);
+    /* تصحيح التمركز الأفقي */
+    top: 10vh;
+}
+
+.sign-in a:hover {
+    background-color: rgb(186, 46, 90);
+}
+/* تكوين للشاشات الصغيرة جداً */
+@media (max-width: 360px) {
+    .form {
+        top: 30vh;
+        /* height: 50vh; */
+        width: 90%;
+        /* تعديل العرض ليكون متوافق مع الشاشة الصغيرة */
+        left: 5%;
+        /* ترك مساحة صغيرة من الجوانب */
+        right: 5%;
+        /* ترك مساحة صغيرة من الجوانب */
+        margin: 0 auto;
+    }
+
+    .sign-in {
+        margin-top: .5em;
+    }
+    .sign h2{
+        padding-top: .2rem;
+    }
+    .sign-in input {
+        /* margin: 3% 10%; */
+        width: 90%;
+        /* جعل العرض يغطي معظم المساحة */
+    }
+
+
+
+    .sign-in .check {
+        /* bottom: 15%; */
+        left: 3%;
+    }
+
+    .form .sign-in a {
+        margin-top: 4em;
+        /* تعديل المسافة للزر */
+        top:100%;
+        /* تحسين الموقع بالنسبة للصورة */
+    }
+}
+
+/* تكوين للشاشات الصغيرة والمتوسطة */
+@media (min-width: 361px) and (max-width: 768px) {
+    .form {
+        top: 34vh;
+        left: 10%;
+        height: 48vh;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sign-in input {
+        margin: 3% auto;
+        width: 80%;
+        /* تغطية العرض بشكل جيد */
+    }
+
+    .sign-in .checklabel {
+        left: 11%;
+        /* تحسين الموقع */
+    }
+s
+    .form .sign-in a {
+        /* margin: 3em auto; */
+        /* تحسين الموقع ليكون مركزي */
+        top: 99%;
+        /* تعديل الموقع ليتناسب مع الشاشة */
+    }
+}
